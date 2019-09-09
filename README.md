@@ -6,4 +6,4 @@ Place your section in the provided empty `<div>` starting around line 126 of `./
 
 ## Setup
 
-A simple static HTTP is included if you want use it. Just run `npm install` and then `npm start`.
+A simple static HTTP server is included if you want use it. Just run `npm install` and then `npm start`.
