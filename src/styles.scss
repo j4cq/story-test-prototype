@@ -1,0 +1,48 @@
+$layer-height: 100vh;
+$delay-height: 200px;
+
+.reveal {
+  position: relative;
+  padding: 0.1px 0;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+  }
+
+  &__inner,
+  &__image {
+    background: no-repeat center center;
+    background-size: cover;
+  }
+
+  &__inner {
+    position: sticky;
+    top: 0;
+    height: $layer-height;
+    overflow: hidden;
+  }
+
+  &__layer {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__placeholder {
+    margin-top: $delay-height;
+    height: $layer-height;
+
+    &:last-child {
+      margin-bottom: $delay-height;
+    }
+  }
+}

@@ -4,12 +4,24 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "build-task:scss-compile": "node-sass-chokidar --source-map true src -o dist",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'src/*.scss' -c 'npm run sass:build'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx serve"
+    "start": "npx serve",
+    "styles": "npm-run-all -p sass:*",
+    "ts": "tsc -w"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "serve": "^11.1.0"
-  }
+    "chokidar-cli": "^2.1.0",
+    "node-sass-chokidar": "^1.4.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "serve": "^11.1.0",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
 }

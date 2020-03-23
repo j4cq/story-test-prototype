@@ -8,6 +8,7 @@
     <title>A day in Fremantle</title>
     <link rel="stylesheet" href="./static/story.14229.min.css">
     <link rel="stylesheet" href="./theme.min.css" class="Theme-Styles">
+    <link rel="stylesheet" href="./dist/styles.css">
     <link type="image/png" rel="icon" href="./assets/favicon.png">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|PT+Serif:400,400i,700,700i">
     <script>
@@ -120,18 +121,27 @@
       </div>
 
 
-      
+
 
 
       <div id="your-reveal-section">
-        <!-- IMPLEMENT YOUR REVEAL SECTION IN HERE-->
-        <!--
-          The assets you want are:
-           - ./assets/reveal-1.jpeg
-           - ./assets/reveal-2.jpeg
-           - ./assets/reveal-3.jpeg
-           - ./assets/reveal-4.jpeg
-        -->
+        <div class="reveal">
+          <div class="reveal__inner" style="background-image: url('./assets/reveal-1.jpeg');">
+            <div class="reveal__layer">
+              <div class="reveal__image" style="background-image: url('./assets/reveal-2.jpeg');"></div>
+            </div>
+            <div class="reveal__layer">
+              <div class="reveal__image" style="background-image: url('./assets/reveal-3.jpeg');"></div>
+            </div>
+            <div class="reveal__layer">
+              <div class="reveal__image" style="background-image: url('./assets/reveal-4.jpeg');"></div>
+            </div>
+          </div>
+
+          <div class="reveal__placeholder"></div>
+          <div class="reveal__placeholder"></div>
+          <div class="reveal__placeholder"></div>
+        </div>
       </div>
 
 
@@ -177,7 +187,7 @@
         <div class="Layout FullSize--fullHeight"><a href="#article" class="Layout__snap--xcenter Layout__snap--ycenter Theme-FooterTopLink">Top</a><a href="https://shorthand.com/?utm_source=__host__&amp;utm_medium=referral&amp;utm_campaign=footer&amp;utm_content=ffX1w3zbEQ" class="Layout__col-3 Layout__snap--xright" rel="noopener" title="The visual storytelling platform for news, magazines, communications and PR" target="_blank" id="footer_shorthand_link"><img src="./assets/created-with-shorthand.png" alt="Created with Shorthand, the visual storytelling platform" class=" Theme-CreatedWithShorthand"></a></div>
       </div>
     </article>
-    <script src="./static/story.14229.min.js"></script>
+    <script src="./dist/scripts.js"></script>
     <script>
       if ((typeof optOutGa === 'undefined') && document.cookie.indexOf('sh_optOutGA=') === -1) {
         ga('create', 'UA-42055132-13', {

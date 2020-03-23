@@ -1,0 +1,31 @@
+.reveal {
+  position: relative;
+  padding: 0.1px 0; }
+  .reveal:after {
+    content: '';
+    display: block;
+    width: 100%; }
+  .reveal__inner, .reveal__image {
+    background: no-repeat center center;
+    background-size: cover; }
+  .reveal__inner {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden; }
+  .reveal__layer {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  .reveal__image {
+    width: 100%;
+    height: 100%; }
+  .reveal__placeholder {
+    margin-top: 200px;
+    height: 100vh; }
+    .reveal__placeholder:last-child {
+      margin-bottom: 200px; }
+
+/*# sourceMappingURL=styles.css.map */
