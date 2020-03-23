@@ -1,11 +1,7 @@
 .reveal {
   position: relative;
   padding: 0.1px 0; }
-  .reveal:after {
-    content: '';
-    display: block;
-    width: 100%; }
-  .reveal__inner, .reveal__image {
+  .reveal__inner, .reveal__layer__image {
     background: no-repeat center center;
     background-size: cover; }
   .reveal__inner {
@@ -16,12 +12,10 @@
   .reveal__layer {
     position: absolute;
     top: -100%;
-    width: 100%;
-    height: 100%;
     overflow: hidden; }
-  .reveal__image {
-    width: 100%;
-    height: 100%; }
+    .reveal__layer, .reveal__layer__image {
+      width: 100%;
+      height: 100%; }
   .reveal__placeholder {
     margin-top: 200px;
     height: 100vh; }

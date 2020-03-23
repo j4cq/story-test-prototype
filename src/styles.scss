@@ -1,18 +1,12 @@
 $layer-height: 100vh;
-$delay-height: 200px;
+$delay-height: 200px; // Delay between layer animations
 
 .reveal {
   position: relative;
-  padding: 0.1px 0;
-
-  &:after {
-    content: '';
-    display: block;
-    width: 100%;
-  }
+  padding: 0.1px 0; // Forces position sticky to honour last bottom margin (delay on last layer)
 
   &__inner,
-  &__image {
+  &__layer__image {
     background: no-repeat center center;
     background-size: cover;
   }
@@ -27,14 +21,13 @@ $delay-height: 200px;
   &__layer {
     position: absolute;
     top: -100%;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-  }
 
-  &__image {
-    width: 100%;
-    height: 100%;
+    &,
+    &__image {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__placeholder {
